@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .slow-underline {
+          position: relative;
+          text-decoration: none;
+
+          border-radius: 9999px;
+          
+        }
+        
+        .slow-underline::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          bottom: 0;
+          background-color: #ffffff ;
+          border-radius: 9999px;
+          transform: scaleX(0);
+          transition: transform 0.5s ease; /* เปลี่ยนค่า transition เพื่อเร่งหรือช้าการเคลื่อนไหวของเส้นใต้ */
+          transform-origin: bottom ;
+          opacity: 20;
+          
+        }
+        
+        .slow-underline:hover::before {
+          transform: scaleX(1);
+          transform-origin: bottom ;
+          border-radius: 9999px;
+          
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- HEAD MENU -->
+    <div class="sticky  top-0  flex w-full bg-black  z-20">
+        <div class=" flex w-full mx-auto items-center justify-center">
+
+            <!-- HOME -->
+            <div class="flex h-20 items-center hover:text-white hover:bg-white hover:bg-opacity-30 dropdown:hover:after">
+                <a class="slow-underline mx-8 text-white flex" href="/homepage.html">Home</a>
+                <div class="h-8 w-px bg-gray-300"></div>
+            </div>
+            <!-- END HOME -->
+
+            <!-- About -->
+            <div class="flex h-20 items-center hover:text-white hover:bg-white hover:bg-opacity-30 dropdown:hover:after">
+                <a class="slow-underline mx-8 text-white flex" href="About.html">About</a>
+                <div class="h-8 w-px bg-gray-300"></div>
+            </div>
+            <!-- END About -->
+
+            <!-- Contact -->
+            <div class="flex h-20 items-center hover:text-white hover:bg-white hover:bg-opacity-30 dropdown:hover:after">
+                <a class="slow-underline mx-8 text-white flex" href="/Contact.html">Contact</a>
+                <div class="w-px bg-gray-300"></div>
+            </div>
+            <!-- END Contact -->
+            
+        </div>
+    </div>
+    <!-- END HEAD MENU -->
+
+
+
+
+    <!-- HERO PAGE 1 -->
+
+    
+    
+
+
+        <section class="relative  bg-black">
+        <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
+                <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
+                    background-image: url('/img/fotor-ai-20240312224949.jpg');
+                ">
+                <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+                </div>
+                <div class="container relative mx-auto">
+                    <div class="items-center flex flex-wrap">
+                        <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                            <div class="pr-12">
+                                <h1 class="text-white font-semibold text-5xl">
+                                    Who are we?
+                                </h1>
+                                <p class="mt-4 text-lg text-white">
+                                    THAI FORTUNE is a company for Thai Fortune Company Limited, operating a business type. 
+                                    Wholesale and retail repair of automobiles and motorcycles, providing services 
+                                    Wholesale of machinery and equipment for use in industrial work
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px" style="transform: translateZ(0px)">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+                </div>
+            </div>
+            <section class="pb-10 bg-blueGray-200 -mt-24">
+                <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h6 class="text-xl font-semibold">Operating model ?</h6>
+                        <p class="mt-2 mb-4 text-blueGray-500">
+                            Divide details about your product or agency work into parts.
+                            A paragraph describing a feature will be enough.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
+                            <i class="fas fa-retweet"></i>
+                        </div>
+                        <h6 class="text-xl font-semibold">Why should you contact us ?</h6>
+                        <p class="mt-2 mb-4 text-blueGray-500">
+                            Keep you user engaged by providing meaningful information.
+                            Remember that by this time, the user is curious.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                        <div class="px-4 py-5 flex-auto">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <h6 class="text-xl font-semibold">Verified Company</h6>
+                        <p class="mt-2 mb-4 text-blueGray-500">
+                            Thai Fortune Company from the Ministry of Fisheries of Thailand.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </section>
+
+        <!-- END HERO PAGE 1 -->
+    
+
+            <!-- Content -->
+                
+                <div class="#">
+                    <div class="max-w-screen-lg mx-auto flex justify-between items-center">
+                    <div class="max-w-xl">
+                        <h2 class="text-white text-sky-950 text-5xl mb-4"></h2>
+                        <p class="text-base text-white">
+                          
+                        </p>
+                    </div>
+                   
+                  
+                    </div>
+                </div>
+                <div class="py-12 relative overflow-hidden bg-white">
+                    <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+                    <div class="w-full flex flex-col items-end pr-16">
+                        <h2 class="text-blueGray-700 font-bold text-2xl max-w-xs text-right mb-12 mt-10">Leader in electric chargers</h2>
+                        <div class="h-full mt-auto overflow-hidden relative">
+                        <img src="/img/ชาร์จเจอร์.jpg" class="h-full w-full object-contain shadow-xl" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="py-20  relative before:absolute before:h-full before:w-screen before:bg-black before:top-0 before:left-0 shadow-xl">
+                        <div class="relative z-20 pl-12">
+                        <h2 class="text-white font-black text-4xl leading-snug mb-20">Care service and repair electric car chargers</h2>
+                        <p class="text-white text-sm">
+                            We have technicians waiting to serve you. Be present throughout the installation, maintenance, and storage of the machine.
+                        </p>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="py-4 relative overflow-hidden bg-white">
+                    <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+                    
+                
+                    <div class="py-20    relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:right-0 shadow-xl">
+                        <div class="relative z-20 pl-18">
+                        <h2 class="text-white font-black text-5xl leading-snug mb-10">We import car parts</h2>
+                        <p class="text-white text-sm  mb-10 mr-20">
+                            We have expertise in this field. 
+                            We can source and import quality auto parts with reasonable prices according 
+                            to customer needs. <br>
+                            We also have strict quality control and product inspection to ensure that the 
+                            products we import meet the highest standards and satisfy our customers.  
+                            If you have additional questions or need more details, don't hesitate to ask us.
+                        </p>
+                        <a href="Contact.html">
+                            <button class="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10">Send Email</button>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-col pl-16">
+                        <h2 class="text-blueGray-700 font-bold text-2xl max-w-xs text-left mb-12 mt-10">Car Part</h2>
+                        <div class="h-full mt-auto overflow-hidden relative">
+                        <img src="/img/unnamed.jpg" class="h-full w-full object-contain" alt="">
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="py-12 relative overflow-hidden bg-white">
+                    <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+                        <div class="w-full flex flex-col items-end pr-16">
+                            <h2 class="text-black font-bold text-2xl max-w-xs text-right mb-12 mt-10">Good service <br> Top Experience</h2>
+                            <div class="h-full mt-auto overflow-hidden relative">
+                            <img src="/img/fotor-ai-20240312225510.jpg" class="h-full w-full object-contain" alt="">
+                            </div>
+                        </div>
+                    
+                        <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-black before:top-0 before:left-0 shadow-xl">
+                            <div class="relative z-20 pl-12">
+                                <h2 class="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">We can help you.</h2>
+                                <p class="text-white text-sm">
+                                    We provide consulting services and transportation services to get you to your destination safely
+                                    , and we have after-sales service to guarantee our reliability.
+                                </p>
+                                <a href="https://web.facebook.com/people/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97-%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%88%E0%B8%B9%E0%B8%99-%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94/100092735562647/?paipv=0&eav=AfZFbJNFhtHrzgIkL54p32sCxb9c0TMqAC57eEeqQLBiKIJnuVrXOhXJ7u4pmhquQtc">
+                                    <button class="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10">Talk with expert</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- END Content -->
+    
+</body>
+
+
+<footer>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <!-- Footer -->
+
+        <footer class="relative bg-black pt-20 pb-6">
+            <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                <h4 class="text-3xl fonat-semibold text-white">FIND US ON</h4>
+                <h5 class="text-lg mt-0 mb-2 text-white">
+                    SUBSCRIBE TO E-NEWS
+                </h5>
+                
+                <div class="mt-6 lg:mb-0 mb-6">
+                    <a href="https://web.facebook.com/profile.php?id=100092735562647&paipv=0&eav=AfZFbJNFhtHrzgIkL54p32sCxb9c0TMqAC57eEeqQLBiKIJnuVrXOhXJ7u4pmhquQtc">
+                        <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button"><i class="fab fa-twitter" ></i> <img src="/img/facebook-icon.png" alt="Facebook"> </button>
+                    </a>
+                    
+                    <a href="https://page.line.me/tftev">
+                        <button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button"><i class="fab fa-facebook-square"></i> <img src="/img/LINE_logo.png" alt="Facebook"> </button>
+                    </a>
+
+                </div>
+
+                </div>
+                <div class="w-full lg:w-6/12 ">
+                <div class="flex flex-wrap items-top mb-6">
+                    <div class="w-full lg:w-4/12 px-4 ml-auto">
+                    <span class="block uppercase text-white text-2xl font-semibold mb-2">Link Contact</span>
+                    <ul class="list-unstyled">
+                        <li>
+                        <a class="text-white hover:text-rose-500 font-semibold block pb-2 text-sm uppercase" href="About.html">About Us</a>
+                        </li>
+                        
+                        <li>
+                        <a class="text-white hover:text-rose-500 font-semibold block pb-2 text-sm uppercase" href="https://github.com/Rraiwar">Github</a>
+                        </li>
+
+                        <li>
+                        <a class="text-white hover:text-rose-500 font-semibold block pb-2 text-sm uppercase" href="/Contact.html">contact</a>
+                        </li>
+                    </ul>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <a href="https://github.com/Rraiwar"  >
+                        <div class="text-sm text-white font-semibold py-1 hover:text-rose-500">
+                            Copyright © 2022 Copyright ©  Creative By Thomas
+                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </footer>
+          
+        <!-- END Footer -->
+    </footer>      
+
+
+</html>
